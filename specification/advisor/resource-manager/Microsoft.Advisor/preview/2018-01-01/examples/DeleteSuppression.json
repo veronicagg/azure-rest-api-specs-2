@@ -3,7 +3,7 @@
     "resourceUri": "resourceUri",
     "recommendationId": "recommendationId",
     "name": "suppressionName1",
-    "api-version": "2017-03-31"
+    "api-version": "2018-01-01"
   },
   "responses": {
     "204": {
