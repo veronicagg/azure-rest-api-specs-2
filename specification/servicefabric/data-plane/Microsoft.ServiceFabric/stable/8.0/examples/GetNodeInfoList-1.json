@@ -2,7 +2,7 @@
    "operationId":"GetNodeInfoList",
    "description":"This example shows how to get information about the nodes in the cluster when the number of results returned is limited by the MaxResults parameter.",
    "parameters":{
-      "api-version":"6.3",
+      "api-version":"8.0",
       "MaxResults":2
    },
    "responses":{
@@ -16,7 +16,7 @@
                   "Name":"_testnode_1",
                   "IpAddressOrFQDN":"10.0.0.5",
                   "Type":"testnode",
-                  "CodeVersion":"6.3.139.9494",
+                  "CodeVersion":"8.0.139.9494",
                   "ConfigVersion":"5",
                   "NodeStatus":"Up",
                   "NodeUpTimeInSeconds":"102016",
@@ -43,7 +43,7 @@
                   "Name":"_testnode_0",
                   "IpAddressOrFQDN":"10.0.0.4",
                   "Type":"testnode",
-                  "CodeVersion":"6.3.139.9494",
+                  "CodeVersion":"8.0.139.9494",
                   "ConfigVersion":"5",
                   "NodeStatus":"Up",
                   "NodeUpTimeInSeconds":"105483",
