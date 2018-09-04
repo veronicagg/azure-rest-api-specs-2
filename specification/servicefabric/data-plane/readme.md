@@ -4,9 +4,10 @@
 
 This is the AutoRest configuration file for ServiceFabricClient.
 
-
 ---
+
 ## Getting Started
+
 To build the SDK for ServiceFabricClient, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -14,18 +15,18 @@ To build the SDK for ServiceFabricClient, simply [Install AutoRest](https://aka.
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
-
-
 ### Basic Information
+
 These are the global settings for the ServiceFabricClient API.
 
 ``` yaml
 openapi-type: data-plane
-tag: '6.3'
+tag: package-8.0
 ```
 
 ### Suppression
@@ -65,6 +66,51 @@ directive:
 
 ```
 
+
+### Tag: package-8.0
+
+These settings apply only when `--tag=package-8.0` is specified on the command line.
+
+```yaml $(tag) == 'package-8.0'
+input-file:
+  - Microsoft.ServiceFabric/stable/8.0/servicefabric.json
+```
+### Tag: 1.0.0
+
+These settings apply only when `--tag=1.0.0` is specified on the command line.
+
+``` yaml $(tag) == '1.0.0'
+input-file:
+- Microsoft.ServiceFabric/stable/1.0.0/servicefabric.json
+```
+
+### Tag: 5.6
+
+These settings apply only when `--tag=5.6` is specified on the command line.
+
+``` yaml $(tag) == '5.6'
+input-file:
+- Microsoft.ServiceFabric/stable/5.6/servicefabric.json
+```
+
+### Tag: 6.0
+
+These settings apply only when `--tag=6.0` is specified on the command line.
+
+``` yaml $(tag) == '6.0'
+input-file:
+- Microsoft.ServiceFabric/stable/6.0/servicefabric.json
+```
+
+### Tag: 6.1
+
+These settings apply only when `--tag=6.1` is specified on the command line.
+
+``` yaml $(tag) == '6.1'
+input-file:
+- Microsoft.ServiceFabric/stable/6.1/servicefabric.json
+```
+
 ### Tag: 6.2
 
 These settings apply only when `--tag=6.2` is specified on the command line.
@@ -75,17 +121,8 @@ input-file:
 
 ```
 
-### Tag: 6.3
-
-These settings apply only when `--tag=6.3` is specified on the command line.
-
-``` yaml $(tag) == '6.3'
-input-file:
-- Microsoft.ServiceFabric/stable/6.3/servicefabric.json
-
-```
-
 ---
+
 # Code Generation
 
 ## Swagger to SDK
@@ -96,7 +133,7 @@ This is not used by Autorest itself.
 ``` yaml $(swagger-to-sdk)
 swagger-to-sdk:
   - repo: azure-sdk-for-python
-  - repo: azure-sdk-for-java
+  - repo: azure-libraries-for-java
   - repo: azure-sdk-for-go
   - repo: azure-sdk-for-node
 ```
@@ -114,21 +151,22 @@ python:
   payload-flattening-threshold: 2
   namespace: azure.servicefabric
   package-name: azure-servicefabric
-  package-version: 6.3.0.0
+  package-version: 6.2.0.0
   add-credentials: true
   clear-output-folder: true
 ```
+
 ``` yaml $(python) && $(python-mode) == 'update'
 python:
   no-namespace-folders: true
   output-folder: $(python-sdks-folder)/azure-servicefabric/azure/servicefabric
 ```
+
 ``` yaml $(python) && $(python-mode) == 'create'
 python:
   basic-setup-py: true
   output-folder: $(python-sdks-folder)/azure-servicefabric
 ```
-
 
 ## Go
 
@@ -145,8 +183,43 @@ go:
 
 ``` yaml $(go) && $(multiapi)
 batch:
+  - tag: "1.0.0"
+  - tag: "5.6"
+  - tag: "6.0"
+  - tag: "6.1"
   - tag: "6.2"
-  - tag: "6.3"
+```
+
+### Tag: 1.0.0 and go
+
+These settings apply only when `--tag=1.0.0 --go` is specified on the command line.
+
+``` yaml $(tag) == '1.0.0' && $(go)
+output-folder: $(go-sdk-folder)/services/servicefabric/1.0.0/servicefabric
+```
+
+### Tag: 5.6 and go
+
+These settings apply only when `--tag=5.6 --go` is specified on the command line.
+
+``` yaml $(tag) == '5.6' && $(go)
+output-folder: $(go-sdk-folder)/services/servicefabric/5.6/servicefabric
+```
+
+### Tag: 6.0 and go
+
+These settings apply only when `--tag=6.0 --go` is specified on the command line.
+
+``` yaml $(tag) == '6.0' && $(go)
+output-folder: $(go-sdk-folder)/services/servicefabric/6.0/servicefabric
+```
+
+### Tag: 6.1 and go
+
+These settings apply only when `--tag=6.1 --go` is specified on the command line.
+
+``` yaml $(tag) == '6.1' && $(go)
+output-folder: $(go-sdk-folder)/services/servicefabric/6.1/servicefabric
 ```
 
 ### Tag: 6.2 and go
@@ -155,15 +228,6 @@ These settings apply only when `--tag=6.2 --go` is specified on the command line
 
 ``` yaml $(tag) == '6.2' && $(go)
 output-folder: $(go-sdk-folder)/services/servicefabric/6.2/servicefabric
-```
-
-
-### Tag: 6.3 and go
-
-These settings apply only when `--tag=6.3 --go` is specified on the command line.
-
-``` yaml $(tag) == '6.2' && $(go)
-output-folder: $(go-sdk-folder)/services/servicefabric/6.3/servicefabric
 ```
 
 ## Java
