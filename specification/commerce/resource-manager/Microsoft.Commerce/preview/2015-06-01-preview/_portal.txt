@@ -1,0 +1,1 @@
+lastUpdate: function now() { [native code] }
