@@ -4,10 +4,10 @@
 
 This is the AutoRest configuration file for Billing.
 
-
-
 ---
+
 ## Getting Started
+
 To build the SDK for Billing, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -15,21 +15,29 @@ To build the SDK for Billing, simply [Install AutoRest](https://aka.ms/autorest/
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
-
-
 ### Basic Information
+
 These are the global settings for the Billing API.
 
 ``` yaml
 openapi-type: arm
-tag: package-2018-03-preview
+tag: package-preview-2018-02
 ```
 
 
+### Tag: package-preview-2018-02
+
+These settings apply only when `--tag=package-preview-2018-02` is specified on the command line.
+
+```yaml $(tag) == 'package-preview-2018-02'
+input-file:
+  - Microsoft.Billing/preview/2018-02-01-preview/billing.json
+```
 ### Tag: package-2018-03-preview
 
 These settings apply only when `--tag=package-2018-03-preview` is specified on the command line.
@@ -58,8 +66,8 @@ input-file:
 ```
 
 ---
-# Code Generation
 
+# Code Generation
 
 ## Swagger to SDK
 
@@ -69,14 +77,13 @@ This is not used by Autorest itself.
 ``` yaml $(swagger-to-sdk)
 swagger-to-sdk:
   - repo: azure-sdk-for-python
-  - repo: azure-sdk-for-java
+  - repo: azure-libraries-for-java
   - repo: azure-sdk-for-go
   - repo: azure-sdk-for-node
   - repo: azure-sdk-for-ruby
     after_scripts:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_billing']
 ```
-
 
 ## C#
 
@@ -109,17 +116,18 @@ python:
   package-version: 0.2.0
   clear-output-folder: true
 ```
+
 ``` yaml $(python) && $(python-mode) == 'update'
 python:
   no-namespace-folders: true
   output-folder: $(python-sdks-folder)/azure-mgmt-billing/azure/mgmt/billing
 ```
+
 ``` yaml $(python) && $(python-mode) == 'create'
 python:
   basic-setup-py: true
   output-folder: $(python-sdks-folder)/azure-mgmt-billing
 ```
-
 
 ## Go
 
@@ -133,6 +141,7 @@ go:
 ```
 
 ### Go multi-api
+
 ``` yaml $(go) && $(multiapi)
 batch:
   - tag: package-2018-03-preview
@@ -167,67 +176,17 @@ Please also specify `--go-sdk-folder=<path to the root directory of your azure-s
 output-folder: $(go-sdk-folder)/services/preview/billing/mgmt/2017-02-27-preview/billing
 ```
 
-
 ## Java
 
 These settings apply only when `--java` is specified on the command line.
 Please also specify `--azure-libraries-for-java-folder=<path to the root directory of your azure-libraries-for-java clone>`.
 
 ``` yaml $(java)
-azure-arm: true
-fluent: true
-namespace: com.microsoft.azure.management.billing
-license-header: MICROSOFT_MIT_NO_CODEGEN
-payload-flattening-threshold: 1
-output-folder: $(azure-libraries-for-java-folder)/azure-mgmt-billing
-```
-
-### Java multi-api
-
-``` yaml $(java) && $(multiapi)
-batch:
-  - tag: package-2017-04-preview
-  - tag: package-2018-03-preview
-  - tag: package-2017-02-preview
-```
-
-### Tag: package-2017-04-preview and java
-
-These settings apply only when `--tag=package-2017-04-preview --java` is specified on the command line.
-Please also specify `--azure-libraries-for-java=<path to the root directory of your azure-sdk-for-java clone>`.
-
-``` yaml $(tag) == 'package-2017-04-preview' && $(java) && $(multiapi)
 java:
-  namespace: com.microsoft.azure.management.billing.v2017_04_24_preview
-  output-folder: $(azure-libraries-for-java-folder)/billing/resource-manager/v2017_04_24_preview
-regenerate-manager: true
-generate-interface: true
+  azure-arm: true
+  fluent: true
+  namespace: com.microsoft.azure.management.billing
+  license-header: MICROSOFT_MIT_NO_CODEGEN
+  payload-flattening-threshold: 1
+  output-folder: $(azure-libraries-for-java-folder)/azure-mgmt-billing
 ```
-
-### Tag: package-2018-03-preview and java
-
-These settings apply only when `--tag=package-2018-03-preview --java` is specified on the command line.
-Please also specify `--azure-libraries-for-java=<path to the root directory of your azure-sdk-for-java clone>`.
-
-``` yaml $(tag) == 'package-2018-03-preview' && $(java) && $(multiapi)
-java:
-  namespace: com.microsoft.azure.management.billing.v2018_03_01_preview
-  output-folder: $(azure-libraries-for-java-folder)/billing/resource-manager/v2018_03_01_preview
-regenerate-manager: true
-generate-interface: true
-```
-
-### Tag: package-2017-02-preview and java
-
-These settings apply only when `--tag=package-2017-02-preview --java` is specified on the command line.
-Please also specify `--azure-libraries-for-java=<path to the root directory of your azure-sdk-for-java clone>`.
-
-``` yaml $(tag) == 'package-2017-02-preview' && $(java) && $(multiapi)
-java:
-  namespace: com.microsoft.azure.management.billing.v2017_02_27_preview
-  output-folder: $(azure-libraries-for-java-folder)/billing/resource-manager/v2017_02_27_preview
-regenerate-manager: true
-generate-interface: true
-```
-
-
