@@ -1,13 +1,13 @@
 # Addons
-    
+
 > see https://aka.ms/autorest
 
 This is the AutoRest configuration file for Addons RP.
 
-
-
 ---
-## Getting Started 
+
+## Getting Started
+
 To build the SDK for Addons, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -15,20 +15,29 @@ To build the SDK for Addons, simply [Install AutoRest](https://aka.ms/autorest/i
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
+### Basic Information
 
-
-### Basic Information 
 These are the global settings for the Addons API.
 
 ``` yaml
 openapi-type: arm
-tag: package-2018-03
+tag: package-preview-2018-10
 ```
 
+
+### Tag: package-preview-2018-10
+
+These settings apply only when `--tag=package-preview-2018-10` is specified on the command line.
+
+```yaml $(tag) == 'package-preview-2018-10'
+input-file:
+  - Microsoft.Addons/preview/2018-10-01/addons-swagger.json
+```
 ### Tag: package-2018-03
 
 These settings apply only when `--tag=package-2018-03` is specified on the command line.
@@ -48,11 +57,12 @@ input-file:
 ```
 
 ---
+
 # Code Generation
 
-
 ---
-## C# 
+
+## C#
 
 These settings apply only when `--csharp` is specified on the command line.
 Please also specify `--csharp-sdks-folder=<path to "SDKs" directory of your azure-sdk-for-net clone>`.
@@ -65,7 +75,6 @@ csharp:
   output-folder: $(csharp-sdks-folder)/Addons/Management.Addons/Generated
   clear-output-folder: true
 ```
-
 
 ## Python
 
@@ -83,11 +92,13 @@ python:
   package-name: azure-mgmt-addons
   clear-output-folder: true
 ```
+
 ``` yaml $(python) && $(python-mode) == 'update'
 python:
   no-namespace-folders: true
   output-folder: $(python-sdks-folder)/azure-mgmt-addons/azure/mgmt/addons
 ```
+
 ``` yaml $(python) && $(python-mode) == 'create'
 python:
   basic-setup-py: true
@@ -104,7 +115,6 @@ go:
   clear-output-folder: true
   namespace: addons
 ```
-
 
 ### Go multi-api
 
@@ -138,46 +148,11 @@ These settings apply only when `--java` is specified on the command line.
 Please also specify `--azure-libraries-for-java-folder=<path to the root directory of your azure-libraries-for-java clone>`.
 
 ``` yaml $(java)
-azure-arm: true
-fluent: true
-namespace: com.microsoft.azure.management.addons
-license-header: MICROSOFT_MIT_NO_CODEGEN
-payload-flattening-threshold: 1
-output-folder: $(azure-libraries-for-java-folder)/azure-mgmt-addons
-```
-
-### Java multi-api
-
-``` yaml $(java) && $(multiapi)
-batch:
-  - tag: package-2018-03
-  - tag: package-2017-05
-```
-
-### Tag: package-2018-03 and java
-
-These settings apply only when `--tag=package-2018-03 --java` is specified on the command line.
-Please also specify `--azure-libraries-for-java=<path to the root directory of your azure-sdk-for-java clone>`.
-
-``` yaml $(tag) == 'package-2018-03' && $(java) && $(multiapi)
 java:
-  namespace: com.microsoft.azure.management.addons.v2018_03_01
-  output-folder: $(azure-libraries-for-java-folder)/addons/resource-manager/v2018_03_01
-regenerate-manager: true
-generate-interface: true
+  azure-arm: true
+  fluent: true
+  namespace: com.microsoft.azure.management.addons
+  license-header: MICROSOFT_MIT_NO_CODEGEN
+  payload-flattening-threshold: 1
+  output-folder: $(azure-libraries-for-java-folder)/azure-mgmt-addons
 ```
-
-### Tag: package-2017-05 and java
-
-These settings apply only when `--tag=package-2017-05 --java` is specified on the command line.
-Please also specify `--azure-libraries-for-java=<path to the root directory of your azure-sdk-for-java clone>`.
-
-``` yaml $(tag) == 'package-2017-05' && $(java) && $(multiapi)
-java:
-  namespace: com.microsoft.azure.management.addons.v2017_05_15
-  output-folder: $(azure-libraries-for-java-folder)/addons/resource-manager/v2017_05_15
-regenerate-manager: true
-generate-interface: true
-```
-
-
