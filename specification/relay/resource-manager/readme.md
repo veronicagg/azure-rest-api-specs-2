@@ -4,10 +4,10 @@
 
 This is the AutoRest configuration file for Relay.
 
-
-
 ---
+
 ## Getting Started
+
 To build the SDK for Relay, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -15,21 +15,29 @@ To build the SDK for Relay, simply [Install AutoRest](https://aka.ms/autorest/in
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
-
-
 ### Basic Information
+
 These are the global settings for the Relay API.
 
 ``` yaml
 openapi-type: arm
-tag: package-2017-04
+tag: package-2017-10
 ```
 
 
+### Tag: package-2017-10
+
+These settings apply only when `--tag=package-2017-10` is specified on the command line.
+
+```yaml $(tag) == 'package-2017-10'
+input-file:
+  - Microsoft.Relay/stable/2017-10-03/relay.json
+```
 ### Tag: package-2017-04
 
 These settings apply only when `--tag=package-2017-04` is specified on the command line.
@@ -38,7 +46,6 @@ These settings apply only when `--tag=package-2017-04` is specified on the comma
 input-file:
 - Microsoft.Relay/stable/2017-04-01/relay.json
 ```
-
 
 ### Tag: package-2016-07
 
@@ -49,10 +56,9 @@ input-file:
 - Microsoft.Relay/stable/2016-07-01/relay.json
 ```
 
-
 ---
-# Code Generation
 
+# Code Generation
 
 ## Swagger to SDK
 
@@ -69,7 +75,6 @@ swagger-to-sdk:
     after_scripts:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_relay']
 ```
-
 
 ## C#
 
@@ -101,17 +106,18 @@ python:
   package-name: azure-mgmt-relay
   clear-output-folder: true
 ```
+
 ``` yaml $(python) && $(python-mode) == 'update'
 python:
   no-namespace-folders: true
   output-folder: $(python-sdks-folder)/azure-mgmt-relay/azure/mgmt/relay
 ```
+
 ``` yaml $(python) && $(python-mode) == 'create'
 python:
   basic-setup-py: true
   output-folder: $(python-sdks-folder)/azure-mgmt-relay
 ```
-
 
 ## Go
 
@@ -149,7 +155,6 @@ Please also specify `--go-sdk-folder=<path to the root directory of your azure-s
 ``` yaml $(tag) == 'package-2016-07' && $(go)
 output-folder: $(go-sdk-folder)/services/relay/mgmt/2016-07-01/relay
 ```
-
 
 ## Java
 
@@ -198,5 +203,3 @@ java:
 regenerate-manager: true
 generate-interface: true
 ```
-
-
