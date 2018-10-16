@@ -30,15 +30,48 @@ These are the global settings for the Network API.
 title: NetworkManagementClient
 description: Network Client
 openapi-type: arm
-tag: package-2018-08
+tag: package-2019-10
 ```
 
 
+### Tag: package-2019-10
+
+These settings apply only when `--tag=package-2019-10` is specified on the command line.
+
+```yaml $(tag) == 'package-2019-10'
+input-file:
+  - Microsoft.Network/stable/2019-10-03/applicationGateway.json
+  - Microsoft.Network/stable/2019-10-03/applicationSecurityGroup.json
+  - Microsoft.Network/stable/2019-10-03/azureFirewall.json
+  - Microsoft.Network/stable/2019-10-03/checkDnsAvailability.json
+  - Microsoft.Network/stable/2019-10-03/ddosProtectionPlan.json
+  - Microsoft.Network/stable/2019-10-03/endpointService.json
+  - Microsoft.Network/stable/2019-10-03/expressRouteCircuit.json
+  - Microsoft.Network/stable/2019-10-03/expressRouteCrossConnection.json
+  - Microsoft.Network/stable/2019-10-03/loadBalancer.json
+  - Microsoft.Network/stable/2019-10-03/network.json
+  - Microsoft.Network/stable/2019-10-03/networkInterface.json
+  - Microsoft.Network/stable/2019-10-03/networkSecurityGroup.json
+  - Microsoft.Network/stable/2019-10-03/networkWatcher.json
+  - Microsoft.Network/stable/2019-10-03/operation.json
+  - Microsoft.Network/stable/2019-10-03/publicIpAddress.json
+  - Microsoft.Network/stable/2019-10-03/publicIpPrefix.json
+  - Microsoft.Network/stable/2019-10-03/routeFilter.json
+  - Microsoft.Network/stable/2019-10-03/routeTable.json
+  - Microsoft.Network/stable/2019-10-03/serviceCommunity.json
+  - Microsoft.Network/stable/2019-10-03/serviceEndpointPolicy.json
+  - Microsoft.Network/stable/2019-10-03/usage.json
+  - Microsoft.Network/stable/2019-10-03/virtualNetwork.json
+  - Microsoft.Network/stable/2019-10-03/virtualNetworkGateway.json
+  - Microsoft.Network/stable/2019-10-03/virtualWan.json
+  - Microsoft.Network/stable/2019-10-03/vmssNetworkInterface.json
+  - Microsoft.Network/stable/2019-10-03/vmssPublicIpAddress.json
+```
 ### Tag: package-2018-08
 
 These settings apply only when `--tag=package-2018-08` is specified on the command line.
 
-```yaml $(tag) == 'package-2018-08'
+``` yaml $(tag) == 'package-2018-08'
 input-file:
   - Microsoft.Network/stable/2018-08-01/applicationGateway.json
   - Microsoft.Network/stable/2018-08-01/applicationSecurityGroup.json
@@ -73,6 +106,7 @@ input-file:
   - Microsoft.Network/stable/2018-08-01/vmssNetworkInterface.json
   - Microsoft.Network/stable/2018-08-01/vmssPublicIpAddress.json
 ```
+
 ### Tag: package-2018-07
 
 These settings apply only when `--tag=package-2018-07` is specified on the command line.
