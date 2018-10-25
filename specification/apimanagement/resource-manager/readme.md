@@ -4,10 +4,10 @@
 
 This is the AutoRest configuration file for ApiManagement.
 
-
-
 ---
+
 ## Getting Started
+
 To build the SDK for ApiManagement, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -15,22 +15,32 @@ To build the SDK for ApiManagement, simply [Install AutoRest](https://aka.ms/aut
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
-
-
 ### Basic Information
+
 These are the global settings for the ApiManagement API.
 
 ``` yaml
 title: ApiManagementClient
 description: ApiManagement Client
 openapi-type: arm
-tag: package-2018-01
+tag: package-2018-10
 ```
 
+
+### Tag: package-2018-10
+
+These settings apply only when `--tag=package-2018-10` is specified on the command line.
+
+```yaml $(tag) == 'package-2018-10'
+input-file:
+  - Microsoft.ApiManagement/stable/2018-10-02/apimanagement.json
+  - Microsoft.ApiManagement/stable/2018-10-02/apimdeployment.json
+```
 ### Tag: package-2018-06-preview
 
 These settings apply only when `--tag=package-2018-06-preview` is specified on the command line.
@@ -65,6 +75,7 @@ input-file:
 ```
 
 ## Suppression
+
 ``` yaml
 directive:
   - suppress: R3016
@@ -109,6 +120,7 @@ input-file:
 ```
 
 ## Suppression
+
 ``` yaml
 directive:
   - suppress: R3016
@@ -152,7 +164,6 @@ input-file:
 - Microsoft.ApiManagement/stable/2017-03-01/apimversionsets.json
 ```
 
-
 ### Tag: package-2016-10
 
 These settings apply only when `--tag=package-2016-10` is specified on the command line.
@@ -190,8 +201,8 @@ input-file:
 ```
 
 ---
-# Code Generation
 
+# Code Generation
 
 ## Swagger to SDK
 
@@ -209,7 +220,6 @@ swagger-to-sdk:
     after_scripts:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_api_management']
 ```
-
 
 ## C#
 
@@ -296,7 +306,6 @@ Please also specify `--go-sdk-folder=<path to the root directory of your azure-s
 output-folder: $(go-sdk-folder)/services/apimanagement/mgmt/2016-07-07/apimanagement
 ```
 
-
 ## Java
 
 These settings apply only when `--java` is specified on the command line.
@@ -372,5 +381,3 @@ java:
 regenerate-manager: true
 generate-interface: true
 ```
-
-
