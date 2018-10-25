@@ -3,7 +3,7 @@
   "info": {
     "title": "ApiManagementClient",
     "description": "Use these REST APIs to manage Azure API Management deployment.",
-    "version": "2016-07-07"
+    "version": "2018-10-02"
   },
   "host": "management.azure.com",
   "schemes": [
