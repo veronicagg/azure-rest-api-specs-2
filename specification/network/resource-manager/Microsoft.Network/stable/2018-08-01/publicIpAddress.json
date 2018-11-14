@@ -3,23 +3,15 @@
   "info": {
     "title": "NetworkManagementClient",
     "description": "The Microsoft Azure Network management API provides a RESTful set of web services that interact with Microsoft Azure Networks service to manage your network resources. The API has entities that capture the relationship between an end user and the Microsoft Azure Networks service.",
-    "version": "2018-08-01"
+    "version": "2018-10-01"
   },
   "host": "management.azure.com",
-  "schemes": [
-    "https"
-  ],
-  "consumes": [
-    "application/json"
-  ],
-  "produces": [
-    "application/json"
-  ],
+  "schemes": ["https"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
   "security": [
     {
-      "azure_auth": [
-        "user_impersonation"
-      ]
+      "azure_auth": ["user_impersonation"]
     }
   ],
   "securityDefinitions": {
@@ -36,9 +28,7 @@
   "paths": {
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/publicIPAddresses/{publicIpAddressName}": {
       "delete": {
-        "tags": [
-          "PublicIPAddresses"
-        ],
+        "tags": ["PublicIPAddresses"],
         "operationId": "PublicIPAddresses_Delete",
         "description": "Deletes the specified public IP address.",
         "parameters": [
@@ -75,14 +65,14 @@
           }
         },
         "x-ms-examples": {
-          "Delete public IP address": { "$ref": "./examples/PublicIpAddressDelete.json" }
+          "Delete public IP address": {
+            "$ref": "./examples/PublicIpAddressDelete.json"
+          }
         },
         "x-ms-long-running-operation": true
       },
       "get": {
-        "tags": [
-          "PublicIPAddresses"
-        ],
+        "tags": ["PublicIPAddresses"],
         "operationId": "PublicIPAddresses_Get",
         "description": "Gets the specified public IP address in a specified resource group.",
         "parameters": [
@@ -123,13 +113,13 @@
           }
         },
         "x-ms-examples": {
-          "Get public IP address": { "$ref": "./examples/PublicIpAddressGet.json" }
+          "Get public IP address": {
+            "$ref": "./examples/PublicIpAddressGet.json"
+          }
         }
       },
       "put": {
-        "tags": [
-          "PublicIPAddresses"
-        ],
+        "tags": ["PublicIPAddresses"],
         "operationId": "PublicIPAddresses_CreateOrUpdate",
         "description": "Creates or updates a static or dynamic public IP address.",
         "parameters": [
@@ -178,16 +168,20 @@
           }
         },
         "x-ms-examples": {
-          "Create public IP address defaults": { "$ref": "./examples/PublicIpAddressCreateDefaults.json" },
-          "Create public IP address allocation method": { "$ref": "./examples/PublicIpAddressCreateCustomizedValues.json" },
-          "Create public IP address DNS": { "$ref": "./examples/PublicIpAddressCreateDns.json" }
+          "Create public IP address defaults": {
+            "$ref": "./examples/PublicIpAddressCreateDefaults.json"
+          },
+          "Create public IP address allocation method": {
+            "$ref": "./examples/PublicIpAddressCreateCustomizedValues.json"
+          },
+          "Create public IP address DNS": {
+            "$ref": "./examples/PublicIpAddressCreateDns.json"
+          }
         },
         "x-ms-long-running-operation": true
       },
       "patch": {
-        "tags": [
-          "PublicIPAddresses"
-        ],
+        "tags": ["PublicIPAddresses"],
         "operationId": "PublicIPAddresses_UpdateTags",
         "description": "Updates public IP address tags.",
         "parameters": [
@@ -230,16 +224,16 @@
           }
         },
         "x-ms-examples": {
-          "Update public IP address tags": { "$ref": "./examples/PublicIpAddressUpdateTags.json" }
+          "Update public IP address tags": {
+            "$ref": "./examples/PublicIpAddressUpdateTags.json"
+          }
         },
         "x-ms-long-running-operation": true
       }
     },
     "/subscriptions/{subscriptionId}/providers/Microsoft.Network/publicIPAddresses": {
       "get": {
-        "tags": [
-          "PublicIPAddresses"
-        ],
+        "tags": ["PublicIPAddresses"],
         "operationId": "PublicIPAddresses_ListAll",
         "description": "Gets all the public IP addresses in a subscription.",
         "parameters": [
@@ -259,7 +253,9 @@
           }
         },
         "x-ms-examples": {
-          "List all public IP addresses": { "$ref": "./examples/PublicIpAddressListAll.json" }
+          "List all public IP addresses": {
+            "$ref": "./examples/PublicIpAddressListAll.json"
+          }
         },
         "x-ms-pageable": {
           "nextLinkName": "nextLink"
@@ -268,9 +264,7 @@
     },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/publicIPAddresses": {
       "get": {
-        "tags": [
-          "PublicIPAddresses"
-        ],
+        "tags": ["PublicIPAddresses"],
         "operationId": "PublicIPAddresses_List",
         "description": "Gets all public IP addresses in a resource group.",
         "parameters": [
@@ -297,7 +291,9 @@
           }
         },
         "x-ms-examples": {
-          "List resource group public IP addresses": { "$ref": "./examples/PublicIpAddressList.json" }
+          "List resource group public IP addresses": {
+            "$ref": "./examples/PublicIpAddressList.json"
+          }
         },
         "x-ms-pageable": {
           "nextLinkName": "nextLink"
@@ -311,10 +307,7 @@
         "name": {
           "type": "string",
           "description": "Name of a public IP address SKU.",
-          "enum": [
-            "Basic",
-            "Standard"
-          ],
+          "enum": ["Basic", "Standard"],
           "x-ms-enum": {
             "name": "PublicIPAddressSkuName",
             "modelAsString": true
@@ -328,10 +321,7 @@
         "publicIPAllocationMethod": {
           "type": "string",
           "description": "The public IP allocation method. Possible values are: 'Static' and 'Dynamic'.",
-          "enum": [
-            "Static",
-            "Dynamic"
-          ],
+          "enum": ["Static", "Dynamic"],
           "x-ms-enum": {
             "name": "IPAllocationMethod",
             "modelAsString": true
@@ -340,10 +330,7 @@
         "publicIPAddressVersion": {
           "type": "string",
           "description": "The public IP address version. Possible values are: 'IPv4' and 'IPv6'.",
-          "enum": [
-            "IPv4",
-            "IPv6"
-          ],
+          "enum": ["IPv4", "IPv6"],
           "x-ms-enum": {
             "name": "IPVersion",
             "modelAsString": true
@@ -358,6 +345,10 @@
           "$ref": "#/definitions/PublicIPAddressDnsSettings",
           "description": "The FQDN of the DNS record associated with the public IP address."
         },
+        "ddosSettings": {
+          "$ref": "#/definitions/DdoSSettings",
+          "description": "The DDoS protection custom policy associated with the public IP address."
+        },
         "ipTags": {
           "type": "array",
           "items": {
@@ -370,7 +361,7 @@
           "description": "The IP address associated with the public IP address resource."
         },
         "publicIPPrefix": {
-          "$ref":"./network.json#/definitions/SubResource",
+          "$ref": "./network.json#/definitions/SubResource",
           "description": "The Public IP Prefix this Public IP Address should be allocated from."
         },
         "idleTimeoutInMinutes": {
@@ -437,6 +428,34 @@
     },
     "PublicIPAddressDnsSettings": {
       "properties": {
+        "domainNameLabel": {
+          "type": "string",
+          "description": "Gets or sets the Domain name label.The concatenation of the domain name label and the regionalized DNS zone make up the fully qualified domain name associated with the public IP address. If a domain name label is specified, an A DNS record is created for the public IP in the Microsoft Azure DNS system."
+        },
+        "fqdn": {
+          "type": "string",
+          "description": "Gets the FQDN, Fully qualified domain name of the A DNS record associated with the public IP. This is the concatenation of the domainNameLabel and the regionalized DNS zone."
+        },
+        "reverseFqdn": {
+          "type": "string",
+          "description": "Gets or Sets the Reverse FQDN. A user-visible, fully qualified domain name that resolves to this public IP address. If the reverseFqdn is specified, then a PTR DNS record is created pointing from the IP address in the in-addr.arpa domain to the reverse FQDN. "
+        }
+      },
+      "description": "Contains FQDN of the DNS record associated with the public IP address"
+    },
+    "DdoSSettings": {
+      "properties": {
+        "ddosCustomPolicy": {
+          "readOnly": false,
+          "type": "string",
+          "description": "The DDoS custom policy associated with the public IP."
+        },
+        "protectionCoverage": {
+          "readOnly": false,
+          "type": "string",
+          "enum": ["Basic", "Standard"],
+          "description": "The type of the DDoS protection plan associated with the public IP."
+        },
         "domainNameLabel": {
           "type": "string",
           "description": "Gets or sets the Domain name label.The concatenation of the domain name label and the regionalized DNS zone make up the fully qualified domain name associated with the public IP address. If a domain name label is specified, an A DNS record is created for the public IP in the Microsoft Azure DNS system."
