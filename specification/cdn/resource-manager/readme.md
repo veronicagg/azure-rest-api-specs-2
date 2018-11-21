@@ -137,4 +137,8 @@ directive:
     from: cdn.json
     where: '$.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/start"].post["x-ms-long-running-operation"]'
     reason: testing error supression
+  - suppress: AvoidMsdnReferences
+    from: cdn.json
+    where: $.info.description
+    reason: testing warning suppression
 ```
