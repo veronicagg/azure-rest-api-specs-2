@@ -141,4 +141,8 @@ directive:
     from: cdn.json
     where: $.info.description
     reason: testing warning suppression
+  - suppress: LongRunningResponseStatusCode
+    from: cdn.json
+    where: '$.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/stop"].post["x-ms-long-running-operation"]'
+    reason: testinf second error supression
 ```
