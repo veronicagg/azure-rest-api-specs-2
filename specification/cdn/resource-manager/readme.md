@@ -29,15 +29,15 @@ openapi-type: arm
 tag: package-2025-06
 ```
 
-
 ### Tag: package-2025-06
 
 These settings apply only when `--tag=package-2025-06` is specified on the command line.
 
-```yaml $(tag) == 'package-2025-06'
+``` yaml $(tag) == 'package-2025-06'
 input-file:
   - Microsoft.Cdn/stable/2025-06-01/cdn.json
 ```
+
 ### Tag: package-2017-10
 
 These settings apply only when `--tag=package-2017-10` is specified on the command line.
@@ -128,3 +128,13 @@ See configuration in [readme.node.md](./readme.node.md)
 ## Ruby
 
 See configuration in [readme.ruby.md](./readme.ruby.md)
+
+## Suppression
+
+``` yaml
+directive:
+  - suppress: LongRunningResponseStatusCode
+    from: cdn.json
+    where: '$.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cdn/profiles/{profileName}/endpoints/{endpointName}/start"].post["x-ms-long-running-operation"]'
+    reason: testing error supression
+```
