@@ -26,9 +26,28 @@ These are the global settings for the MediaServices API.
 
 ``` yaml
 openapi-type: arm
-tag: package-2018-06-preview
+tag: package-2018-07
 ```
 
+<<<<<<< HEAD
+=======
+
+### Tag: package-2018-07
+
+These settings apply only when `--tag=package-2018-07` is specified on the command line.
+
+```yaml $(tag) == 'package-2018-07'
+input-file:
+  - Microsoft.Media/stable/2018-07-01/AccountFilters.json
+  - Microsoft.Media/stable/2018-07-01/Accounts.json
+  - Microsoft.Media/stable/2018-07-01/AssetsAndAssetFilters.json
+  - Microsoft.Media/stable/2018-07-01/Common.json
+  - Microsoft.Media/stable/2018-07-01/ContentKeyPolicies.json
+  - Microsoft.Media/stable/2018-07-01/Encoding.json
+  - Microsoft.Media/stable/2018-07-01/StreamingPoliciesAndStreamingLocators.json
+  - Microsoft.Media/stable/2018-07-01/streamingservice.json
+```
+>>>>>>> upstream/master
 ### Tag: package-2015-10
 
 These settings apply only when `--tag=package-2015-10` is specified on the command line.
@@ -80,6 +99,7 @@ swagger-to-sdk:
   - repo: azure-sdk-for-python
   - repo: azure-sdk-for-java
   - repo: azure-sdk-for-go
+  - repo: azure-sdk-for-js
   - repo: azure-sdk-for-node
   - repo: azure-sdk-for-ruby
     after_scripts:
@@ -133,6 +153,7 @@ python:
 
 ## Go
 
+<<<<<<< HEAD
 These settings apply only when `--go` is specified on the command line.
 
 ``` yaml $(go)
@@ -177,6 +198,9 @@ Please also specify the `--go-sdk-folder=<path to the root directory of your azu
 ``` yaml $(tag) == 'package-2018-06-preview' && $(go)
 output-folder: $(go-sdk-folder)/services/preview/mediaservices/mgmt/2018-06-01-preview/media
 ```
+=======
+See configuration in [readme.go.md](./readme.go.md)
+>>>>>>> upstream/master
 
 ## Java
 
@@ -199,6 +223,7 @@ batch:
   - tag: package-2015-10
   - tag: package-2018-03-preview
   - tag: package-2018-06-preview
+  - tag: package-2018-07
 ```
 
 ### Tag: package-2015-10 and java
@@ -240,6 +265,7 @@ regenerate-manager: true
 generate-interface: true
 ```
 
+<<<<<<< HEAD
 ## Suppression
 
 ``` yaml
@@ -262,3 +288,17 @@ directive:
     reason: |
       MediaServices GET suppression
 ```
+=======
+### Tag: package-2018-07 and java
+
+These settings apply only when `--tag=package-2018-07 --java` is specified on the command line.
+Please also specify the `--azure-libraries-for-java-folder=<path to the root directory of your azure-sdk-for-java clone>`.
+
+``` yaml $(tag) == 'package-2018-07' && $(java) && $(multiapi)
+java:
+  namespace: com.microsoft.azure.management.mediaservices.v2018_07_01
+  output-folder: $(azure-libraries-for-java-folder)/mediaservices/resource-manager/v2018_07_01
+regenerate-manager: true
+generate-interface: true
+```
+>>>>>>> upstream/master

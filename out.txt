@@ -1,0 +1,496 @@
+AutoRest code generation utility [version: 2.0.4283; node: v8.12.0]
+(C) 2018 Microsoft Corporation.
+https://aka.ms/autorest
+   Loading AutoRest core      'C:\Users\vergiau\.autorest\@microsoft.azure_autorest-core@2.0.4283\node_modules\@microsoft.azure\autorest-core\dist' (2.0.4283)
+   Loading AutoRest extension '@microsoft.azure/classic-openapi-validator' (~1.0.9->1.0.9)
+   Loading AutoRest extension '@microsoft.azure/openapi-validator' (~1.0.2->1.0.2)
+
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'manualupgrade' in:'VirtualMachineScaleSets_UpdateInstances'. Consider updating the operationId
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:3091:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/manualupgrade"].post.operationId)
+
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'osrollingupgrade' in:'VirtualMachineScaleSetRollingUpgrades_StartOSUpgrade'. Consider updating the operationId
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:3278:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/osRollingUpgrade"].post.operationId)
+
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'extensionrollingupgrade' in:'VirtualMachineScaleSetRollingUpgrades_StartExtensionUpgrade'. Consider updating the operationId
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:3318:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/extensionRollingUpgrade"].post.operationId)
+
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'getrequestratebyinterval' in:'LogAnalytics_ExportRequestRateByInterval'. Consider updating the operationId
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4088:8 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/logAnalytics/apiAccess/getRequestRateByInterval"].post.operationId)
+
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'getthrottledrequests' in:'LogAnalytics_ExportThrottledRequests'. Consider updating the operationId
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4142:8 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/logAnalytics/apiAccess/getThrottledRequests"].post.operationId)
+
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'begingetaccess' in:'Disks_GrantAccess'. Consider updating the operationId
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:290:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/disks/{diskName}/beginGetAccess"].post.operationId)
+
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'endgetaccess' in:'Disks_RevokeAccess'. Consider updating the operationId
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:334:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/disks/{diskName}/endGetAccess"].post.operationId)
+
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'begingetaccess' in:'Snapshots_GrantAccess'. Consider updating the operationId
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:605:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/snapshots/{snapshotName}/beginGetAccess"].post.operationId)
+
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'endgetaccess' in:'Snapshots_RevokeAccess'. Consider updating the operationId
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:649:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/snapshots/{snapshotName}/endGetAccess"].post.operationId)
+
+WARNING (ListInOperationName/R1003/SDKViolation): Since operation 'VirtualMachineScaleSets_GetOSUpgradeHistory' response has model definition 'x-ms-pageable', it should be of the form "*_list*". Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:2804:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/osUpgradeHistory"].get.operationId)
+
+WARNING (TrackedResourceListByImmediateParent/R3010/RPCViolation): The child tracked resource, 'extensions' with immediate parent 'VirtualMachine', must have a list by immediate parent operation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (TrackedResourceListByImmediateParent/R3010/RPCViolation): The child tracked resource, 'extensions' with immediate parent 'VirtualMachineScaleSet', must have a list by immediate parent operation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (TrackedResourceListByImmediateParent/R3010/RPCViolation): The child tracked resource, 'virtualmachines' with immediate parent 'VirtualMachineScaleSet', must have a list by immediate parent operation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (ParameterDescriptionRequired/R4000/SDKViolation): 'publisherName' parameter lacks 'description' property. Consider adding a 'description' element. Accurate description is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:355:10 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions/{version}"].get.parameters[1])
+
+WARNING (ParameterDescriptionRequired/R4000/SDKViolation): 'type' parameter lacks 'description' property. Consider adding a 'description' element. Accurate description is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:361:10 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions/{version}"].get.parameters[2])
+
+WARNING (ParameterDescriptionRequired/R4000/SDKViolation): 'version' parameter lacks 'description' property. Consider adding a 'description' element. Accurate description is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:367:10 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions/{version}"].get.parameters[3])
+
+WARNING (ParameterDescriptionRequired/R4000/SDKViolation): 'publisherName' parameter lacks 'description' property. Consider adding a 'description' element. Accurate description is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:405:10 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types"].get.parameters[1])
+
+WARNING (ParameterDescriptionRequired/R4000/SDKViolation): 'publisherName' parameter lacks 'description' property. Consider adding a 'description' element. Accurate description is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:446:10 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions"].get.parameters[1])
+
+WARNING (ParameterDescriptionRequired/R4000/SDKViolation): 'type' parameter lacks 'description' property. Consider adding a 'description' element. Accurate description is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:452:10 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions"].get.parameters[2])
+
+WARNING (ParameterDescriptionRequired/R4000/SDKViolation): '$top' parameter lacks 'description' property. Consider adding a 'description' element. Accurate description is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:465:10 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions"].get.parameters[4])
+
+WARNING (ParameterDescriptionRequired/R4000/SDKViolation): '$orderby' parameter lacks 'description' property. Consider adding a 'description' element. Accurate description is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:472:10 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmextension/types/{type}/versions"].get.parameters[5])
+
+WARNING (ParameterDescriptionRequired/R4000/SDKViolation): '$top' parameter lacks 'description' property. Consider adding a 'description' element. Accurate description is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:863:10 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmimage/offers/{offer}/skus/{skus}/versions"].get.parameters[5])
+
+WARNING (ParameterDescriptionRequired/R4000/SDKViolation): '$orderby' parameter lacks 'description' property. Consider adding a 'description' element. Accurate description is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:870:10 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/publishers/{publisherName}/artifacttypes/vmimage/offers/{offer}/skus/{skus}/versions"].get.parameters[6])
+
+WARNING (OperationIdNounConflictingModelNames/R2063/SDKViolation): OperationId has a noun that conflicts with one of the model names in definitions section. The model name will be disambiguated to 'UsageModel'. Consider using the plural form of 'Usage' to avoid this. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:1028:8 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/usages"].get.operationId)
+
+WARNING (GetInOperationName/R1005/SDKViolation): 'GET' operation 'VirtualMachines_InstanceView' should use method name 'Get' or Method name start with 'List'. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:1681:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}/instanceView"].get.operationId)
+
+WARNING (PutInOperationName/R1006/SDKViolation): 'PUT' operation 'VirtualMachineScaleSetVMs_Update' should use method name 'Create'. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:3589:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}"].put.operationId)
+
+WARNING (TrackedResourceListByResourceGroup/R3027/RPCViolation): The tracked resource, 'AvailabilitySet', must have a list by resource group operation.(This rule does not apply for tenant level resources.)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4315:4 ($.definitions.AvailabilitySet)
+
+WARNING (TrackedResourceListByResourceGroup/R3027/RPCViolation): The tracked resource, 'VirtualMachineExtension', must have a list by resource group operation.(This rule does not apply for tenant level resources.)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4599:4 ($.definitions.VirtualMachineExtension)
+
+WARNING (TrackedResourceListByResourceGroup/R3027/RPCViolation): The tracked resource, 'VirtualMachine', must have a list by resource group operation.(This rule does not apply for tenant level resources.)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5871:4 ($.definitions.VirtualMachine)
+
+WARNING (TrackedResourceListByResourceGroup/R3027/RPCViolation): The tracked resource, 'VirtualMachineScaleSet', must have a list by resource group operation.(This rule does not apply for tenant level resources.)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7158:4 ($.definitions.VirtualMachineScaleSet)
+
+WARNING (TrackedResourceListByResourceGroup/R3027/RPCViolation): The tracked resource, 'VirtualMachineScaleSetVM', must have a list by resource group operation.(This rule does not apply for tenant level resources.)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7619:4 ($.definitions.VirtualMachineScaleSetVM)
+
+WARNING (TrackedResourceListByResourceGroup/R3027/RPCViolation): The tracked resource, 'RollingUpgradeStatusInfo', must have a list by resource group operation.(This rule does not apply for tenant level resources.)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7753:4 ($.definitions.RollingUpgradeStatusInfo)
+
+WARNING (TrackedResourceListByResourceGroup/R3027/RPCViolation): The tracked resource, 'VirtualMachineImageResource', must have a list by resource group operation.(This rule does not apply for tenant level resources.)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4464:4 ($.definitions.VirtualMachineImageResource)
+
+WARNING (TrackedResourceListBySubscription/R3028/RPCViolation): The tracked resource, 'VirtualMachineExtension', must have a list by subscriptions operation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4599:4 ($.definitions.VirtualMachineExtension)
+
+WARNING (TrackedResourceListBySubscription/R3028/RPCViolation): The tracked resource, 'RollingUpgradeStatusInfo', must have a list by subscriptions operation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7753:4 ($.definitions.RollingUpgradeStatusInfo)
+
+WARNING (TrackedResourceListBySubscription/R3028/RPCViolation): The tracked resource, 'VirtualMachineImageResource', must have a list by subscriptions operation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4464:4 ($.definitions.VirtualMachineImageResource)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'SubResource' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7972:4 ($.definitions.SubResource)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'SubResourceReadOnly' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7981:4 ($.definitions.SubResourceReadOnly)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'RunCommandResult' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:433:4 ($.definitions.RunCommandResult)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'ResourceSkuLocationInfo' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:273:4 ($.definitions.ResourceSkuLocationInfo)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'ResourceSkuRestrictionInfo' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:290:4 ($.definitions.ResourceSkuRestrictionInfo)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'ContainerServiceDiagnosticsProfile' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:529:4 ($.definitions.ContainerServiceDiagnosticsProfile)
+
+WARNING (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-enum type extension set with appropriate options. Property name: count
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:352:8 ($.definitions.ContainerServiceMasterProfile.properties.count)
+
+WARNING (LocationMustHaveXmsMutability/S4002/SDKViolation): Property 'location' must have '"x-ms-mutability":["read", "create"]' extension defined. Resource Model: 'Resource'
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (LocationMustHaveXmsMutability/S4002/SDKViolation): Property 'location' must have '"x-ms-mutability":["read", "create"]' extension defined. Resource Model: 'Resource'
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (LocationMustHaveXmsMutability/S4002/SDKViolation): Property 'location' must have '"x-ms-mutability":["read", "create"]' extension defined. Resource Model: 'Resource'
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (LocationMustHaveXmsMutability/S4002/SDKViolation): Property 'location' must have '"x-ms-mutability":["read", "create"]' extension defined. Resource Model: 'Resource'
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (LocationMustHaveXmsMutability/S4002/SDKViolation): Property 'location' must have '"x-ms-mutability":["read", "create"]' extension defined. Resource Model: 'Resource'
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (LocationMustHaveXmsMutability/S4002/SDKViolation): Property 'location' must have '"x-ms-mutability":["read", "create"]' extension defined. Resource Model: 'Resource'
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (LocationMustHaveXmsMutability/S4002/SDKViolation): Property 'location' must have '"x-ms-mutability":["read", "create"]' extension defined. Resource Model: 'Resource'
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (LocationMustHaveXmsMutability/S4002/SDKViolation): Property 'location' must have '"x-ms-mutability":["read", "create"]' extension defined. Resource Model: 'Resource'
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (LocationMustHaveXmsMutability/S4002/SDKViolation): Property 'location' must have '"x-ms-mutability":["read", "create"]' extension defined. Resource Model: 'Resource'
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (LocationMustHaveXmsMutability/S4002/SDKViolation): Property 'location' must have '"x-ms-mutability":["read", "create"]' extension defined. Resource Model: 'Resource'
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (LocationMustHaveXmsMutability/S4002/SDKViolation): Property 'location' must have '"x-ms-mutability":["read", "create"]' extension defined. Resource Model: 'Resource'
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (LocationMustHaveXmsMutability/S4002/SDKViolation): Property 'location' must have '"x-ms-mutability":["read", "create"]' extension defined. Resource Model: 'VirtualMachineImageResource'
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (LocationMustHaveXmsMutability/S4002/SDKViolation): Property 'location' must have '"x-ms-mutability":["read", "create"]' extension defined. Resource Model: 'VirtualMachineImageResource'
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:267:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:677:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2017-09-01/skus.json:67:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:242:2 ($.definitions)
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4192:2 ($.definitions)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'display' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4218:8 ($.definitions.ComputeOperationValue.properties.display)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4317:8 ($.definitions.AvailabilitySet.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4335:8 ($.definitions.AvailabilitySetUpdate.properties.properties)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: vmScaleSetEnabled
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4430:8 ($.definitions.VirtualMachineExtensionImageProperties.properties.vmScaleSetEnabled)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: supportsMultipleExtensions
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4434:8 ($.definitions.VirtualMachineExtensionImageProperties.properties.supportsMultipleExtensions)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4448:8 ($.definitions.VirtualMachineExtensionImage.properties.properties)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: autoUpgradeMinorVersion
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4542:8 ($.definitions.VirtualMachineExtensionProperties.properties.autoUpgradeMinorVersion)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: autoUpgradeMinorVersion
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4584:8 ($.definitions.VirtualMachineExtensionUpdateProperties.properties.autoUpgradeMinorVersion)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4601:8 ($.definitions.VirtualMachineExtension.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4615:8 ($.definitions.VirtualMachineExtensionUpdate.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'plan' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4694:8 ($.definitions.VirtualMachineImageProperties.properties.plan)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'osDiskImage' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4697:8 ($.definitions.VirtualMachineImageProperties.properties.osDiskImage)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'dataDiskImages' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4700:8 ($.definitions.VirtualMachineImageProperties.properties.dataDiskImages)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4711:8 ($.definitions.VirtualMachineImage.properties.properties)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: overwriteVhds
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:4805:8 ($.definitions.VirtualMachineCaptureParameters.properties.overwriteVhds)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: enabled
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5123:8 ($.definitions.DiskEncryptionSettings.properties.enabled)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: writeAcceleratorEnabled
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5226:8 ($.definitions.OSDisk.properties.writeAcceleratorEnabled)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: writeAcceleratorEnabled
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5272:8 ($.definitions.DataDisk.properties.writeAcceleratorEnabled)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: provisionVMAgent
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5394:8 ($.definitions.WindowsConfiguration.properties.provisionVMAgent)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: enableAutomaticUpdates
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5398:8 ($.definitions.WindowsConfiguration.properties.enableAutomaticUpdates)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: disablePasswordAuthentication
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5447:8 ($.definitions.LinuxConfiguration.properties.disablePasswordAuthentication)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: provisionVMAgent
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5455:8 ($.definitions.LinuxConfiguration.properties.provisionVMAgent)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: allowExtensionOperations
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5524:8 ($.definitions.OSProfile.properties.allowExtensionOperations)
+
+WARNING (NonApplicationJsonType/R2004/RPCViolation): Only 'application/json' content-type is supported by ARM.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:14:4 ($.consumes[1])
+
+WARNING (NonApplicationJsonType/R2004/RPCViolation): Only 'application/json' content-type is supported by ARM.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:18:4 ($.produces[1])
+
+WARNING (ListInOperationName/R1003/SDKViolation): Since operation 'VirtualMachines_RunCommand' response has model definition 'array', it should be of the form "*_list*". Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:126:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}/runCommand"].post.operationId)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: primary
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5533:8 ($.definitions.NetworkInterfaceReferenceProperties.properties.primary)
+
+WARNING (ListInOperationName/R1003/SDKViolation): Since operation 'VirtualMachineScaleSetVMs_RunCommand' response has model definition 'array', it should be of the form "*_list*". Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:184:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/virtualmachines/{instanceId}/runCommand"].post.operationId)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5542:8 ($.definitions.NetworkInterfaceReference.properties.properties)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: enabled
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5568:8 ($.definitions.BootDiagnostics.properties.enabled)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: isCustomerInitiatedMaintenanceAllowed
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5714:8 ($.definitions.MaintenanceRedeployStatus.properties.isCustomerInitiatedMaintenanceAllowed)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5877:8 ($.definitions.VirtualMachine.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5914:8 ($.definitions.VirtualMachineUpdate.properties.properties)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: disableAutoRollback
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:5976:8 ($.definitions.AutoOSUpgradePolicy.properties.disableAutoRollback)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: automaticOSUpgrade
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6002:8 ($.definitions.UpgradePolicy.properties.automaticOSUpgrade)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: zoneResilient
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6170:8 ($.definitions.ImageStorageProfile.properties.zoneResilient)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6197:8 ($.definitions.Image.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6211:8 ($.definitions.ImageUpdate.properties.properties)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: writeAcceleratorEnabled
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6369:8 ($.definitions.VirtualMachineScaleSetOSDisk.properties.writeAcceleratorEnabled)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: writeAcceleratorEnabled
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6421:8 ($.definitions.VirtualMachineScaleSetUpdateOSDisk.properties.writeAcceleratorEnabled)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: writeAcceleratorEnabled
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6463:8 ($.definitions.VirtualMachineScaleSetDataDisk.properties.writeAcceleratorEnabled)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: primary
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6542:8 ($.definitions.VirtualMachineScaleSetIPConfigurationProperties.properties.primary)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: primary
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6599:8 ($.definitions.VirtualMachineScaleSetUpdateIPConfigurationProperties.properties.primary)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6656:8 ($.definitions.VirtualMachineScaleSetIPConfiguration.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6677:8 ($.definitions.VirtualMachineScaleSetUpdateIPConfiguration.properties.properties)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: primary
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6691:8 ($.definitions.VirtualMachineScaleSetNetworkConfigurationProperties.properties.primary)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: enableAcceleratedNetworking
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6695:8 ($.definitions.VirtualMachineScaleSetNetworkConfigurationProperties.properties.enableAcceleratedNetworking)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: enableIPForwarding
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6714:8 ($.definitions.VirtualMachineScaleSetNetworkConfigurationProperties.properties.enableIPForwarding)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: primary
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6726:8 ($.definitions.VirtualMachineScaleSetUpdateNetworkConfigurationProperties.properties.primary)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: enableAcceleratedNetworking
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6730:8 ($.definitions.VirtualMachineScaleSetUpdateNetworkConfigurationProperties.properties.enableAcceleratedNetworking)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: enableIPForwarding
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6749:8 ($.definitions.VirtualMachineScaleSetUpdateNetworkConfigurationProperties.properties.enableIPForwarding)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6762:8 ($.definitions.VirtualMachineScaleSetNetworkConfiguration.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6783:8 ($.definitions.VirtualMachineScaleSetUpdateNetworkConfiguration.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6838:8 ($.definitions.VirtualMachineScaleSetPublicIPAddressConfiguration.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6854:8 ($.definitions.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration.properties.properties)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: autoUpgradeMinorVersion
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6946:8 ($.definitions.VirtualMachineScaleSetExtensionProperties.properties.autoUpgradeMinorVersion)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:6972:8 ($.definitions.VirtualMachineScaleSetExtension.properties.properties)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: overprovision
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7112:8 ($.definitions.VirtualMachineScaleSetProperties.properties.overprovision)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: singlePlacementGroup
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7121:8 ($.definitions.VirtualMachineScaleSetProperties.properties.singlePlacementGroup)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: zoneBalance
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7125:8 ($.definitions.VirtualMachineScaleSetProperties.properties.zoneBalance)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: overprovision
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7147:8 ($.definitions.VirtualMachineScaleSetUpdateProperties.properties.overprovision)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: singlePlacementGroup
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7151:8 ($.definitions.VirtualMachineScaleSetUpdateProperties.properties.singlePlacementGroup)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7168:8 ($.definitions.VirtualMachineScaleSet.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7201:8 ($.definitions.VirtualMachineScaleSetUpdate.properties.properties)
+
+WARNING (AvoidNestedProperties/R2001/SDKViolation): Consider using x-ms-client-flatten to provide a better end user experience
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7529:8 ($.definitions.UpgradeOperationHistoricalStatusInfo.properties.properties)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: latestModelApplied
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7568:8 ($.definitions.VirtualMachineScaleSetVMProperties.properties.latestModelApplied)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7631:8 ($.definitions.VirtualMachineScaleSetVM.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7755:8 ($.definitions.RollingUpgradeStatusInfo.properties.properties)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: walkPerformed
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:7993:8 ($.definitions.RecoveryWalkResponse.properties.walkPerformed)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: groupByThrottlePolicy
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:8057:8 ($.definitions.LogAnalyticsInputBase.properties.groupByThrottlePolicy)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: groupByOperationName
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:8061:8 ($.definitions.LogAnalyticsInputBase.properties.groupByOperationName)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: groupByResourceName
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:8065:8 ($.definitions.LogAnalyticsInputBase.properties.groupByResourceName)
+
+WARNING (AvoidNestedProperties/R2001/SDKViolation): Consider using x-ms-client-flatten to provide a better end user experience
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/compute.json:8079:8 ($.definitions.LogAnalyticsOperationResult.properties.properties)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: required
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-06-01/runCommands.json:300:8 ($.definitions.RunCommandParameterDefinition.properties.required)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'sku' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:720:8 ($.definitions.Disk.properties.sku)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:730:8 ($.definitions.Disk.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:744:8 ($.definitions.DiskUpdate.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'sku' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:755:8 ($.definitions.DiskUpdate.properties.sku)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: enabled
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:874:8 ($.definitions.EncryptionSettings.properties.enabled)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'access' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:1017:8 ($.definitions.GrantAccessData.properties.access)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'sku' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:1057:8 ($.definitions.Snapshot.properties.sku)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:1060:8 ($.definitions.Snapshot.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:1074:8 ($.definitions.SnapshotUpdate.properties.properties)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'sku' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.Compute/stable/2018-04-01/disk.json:1085:8 ($.definitions.SnapshotUpdate.properties.sku)
+
+WARNING (EnumInsteadOfBoolean/R3018/RPCViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: enabled
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:540:8 ($.definitions.ContainerServiceVMDiagnostics.properties.enabled)
+
+WARNING (DescriptionAndTitleMissing/R4000/SDKViolation): 'properties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
+    - file:///F:/Git/veronicagg/azure-rest-api-specs-2/specification/compute/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json:557:8 ($.definitions.ContainerService.properties.properties)
