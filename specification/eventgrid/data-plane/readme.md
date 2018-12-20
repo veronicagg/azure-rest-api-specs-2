@@ -76,6 +76,7 @@ This is not used by Autorest itself.
 swagger-to-sdk:
   - repo: azure-sdk-for-go
   - repo: azure-sdk-for-python
+  - repo: azure-sdk-for-js
   - repo: azure-sdk-for-node
   - repo: azure-sdk-for-ruby
     after_scripts:
@@ -129,6 +130,7 @@ python:
 
 ## Go
 
+<<<<<<< HEAD
 These settings apply only when `--go` is specified on the command line.
 
 ``` yaml $(go)
@@ -153,6 +155,9 @@ Please also specify `--go-sdk-folder=<path to the root directory of your azure-s
 ``` yaml $(tag) == 'package-2018-01' && $(go)
 output-folder: $(go-sdk-folder)/services/eventgrid/2018-01-01/eventgrid
 ```
+=======
+See configuration in [readme.go.md](./readme.go.md)
+>>>>>>> upstream/master
 
 ## Java
 
