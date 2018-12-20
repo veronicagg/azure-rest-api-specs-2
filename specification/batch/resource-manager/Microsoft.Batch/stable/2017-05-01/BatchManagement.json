@@ -3,6 +3,7 @@
   "info": {
     "title": "BatchManagement",
     "version": "2017-05-01",
+    "description": "adding description",
     "x-ms-code-generation-settings": {
       "name": "BatchManagementClient"
     }
