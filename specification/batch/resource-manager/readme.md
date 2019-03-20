@@ -95,6 +95,10 @@ directive:
     from: BatchManagement.json
     where: 'paths,/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Batch/batchAccounts/{accountName}/syncAutoStorageKeys,post,operationId'
     reason: testing suppressions
+  - suppress: PostOperationIdContainsUrlVerb
+    from: BatchManagement.json
+    where: 'paths,/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Batch/batchAccounts/{accountName}/syncAutoStorageKeys,post,operationId'
+    reason: test 2
 ```
 
 ### Tag: package-2017-05
