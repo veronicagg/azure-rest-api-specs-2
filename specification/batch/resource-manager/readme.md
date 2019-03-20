@@ -29,15 +29,15 @@ openapi-type: arm
 tag: package-preview-2019-01
 ```
 
-
 ### Tag: package-preview-2019-01
 
 These settings apply only when `--tag=package-preview-2019-01` is specified on the command line.
 
-```yaml $(tag) == 'package-preview-2019-01'
+``` yaml $(tag) == 'package-preview-2019-01'
 input-file:
   - Microsoft.Batch/preview/2019-01-01/BatchManagement.json
 ```
+
 ### Tag: package-2018-12
 
 These settings apply only when `--tag=package-2018-12` is specified on the command line.
@@ -91,6 +91,10 @@ directive:
     from: BatchManagement.json
     where: $.definitions.UserAccount
     reason: This field contains a secret (password) and is not returned on a get (but is required on a PUT/PATCH). Previous discussions with the modelling team had said that this was the correct way to model this type of field.
+  - suppress: PostOperationIdContainsUrlVerb
+    from: BatchManagement.json
+    where: 'paths,/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Batch/batchAccounts/{accountName}/syncAutoStorageKeys,post,operationId'
+    reason: testing suppressions
 ```
 
 ### Tag: package-2017-05
