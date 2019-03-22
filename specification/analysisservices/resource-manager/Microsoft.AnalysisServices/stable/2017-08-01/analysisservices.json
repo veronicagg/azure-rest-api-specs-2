@@ -3,7 +3,7 @@
   "info": {
     "version": "2017-08-01",
     "title": "AzureAnalysisServices",
-    "description": "The Azure Analysis Services Web API provides a RESTful set of web services that enables users to create, retrieve, update, and delete Analysis Services servers",
+    "description": "The Azure Analysis Services Web API provides a RESTful set of web services that enables users to create, retrieve, update, and delete Analysis Services servers - test",
     "x-ms-code-generation-settings": {
       "name": "AnalysisServicesManagementClient"
     }
