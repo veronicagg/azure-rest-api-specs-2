@@ -15,7 +15,7 @@
                 "tags": [
                     "ImagePredictionApi"
                 ],
-                "summary": "Predict an image url and saves the result",
+                "summary": "test - Predict an image url and saves the result",
                 "operationId": "PredictImageUrl",
                 "consumes": [
                     "application/json",
