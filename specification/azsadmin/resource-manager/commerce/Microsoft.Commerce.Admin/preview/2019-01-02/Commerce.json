@@ -1,7 +1,7 @@
 {
     "swagger": "2.0",
     "info": {
-        "version": "2015-06-01-preview",
+        "version": "2019-01-02",
         "title": "CommerceManagementClient",
         "description": "The Admin Commerce Management Client."
     },
@@ -287,7 +287,7 @@
             "description": "Client API Version.",
             "required": true,
             "type": "string",
-            "default": "2015-06-01-preview"
+            "default": "2019-01-02"
         },
         "ReportedStartTimeParameter": {
             "description": "The reported start time (inclusive).",
