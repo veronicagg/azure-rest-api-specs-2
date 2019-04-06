@@ -3,7 +3,7 @@
     "info": {
         "version": "2017-02-01-preview",
         "title": "KeyVaultManagementClient",
-        "description": "The Admin KeyVault Management Client."
+        "description": "test - The Admin KeyVault Management Client."
     },
     "host": "management.local.azurestack.external",
     "schemes": [
