@@ -3,7 +3,7 @@
   "info": {
     "title": "GraphRbacManagementClient",
     "version": "1.6",
-    "description": "The Graph RBAC Management Client"
+    "description": "test - The Graph RBAC Management Client"
   },
   "host": "graph.windows.net",
   "schemes": [
