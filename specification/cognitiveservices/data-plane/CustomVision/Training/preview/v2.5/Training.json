@@ -5,7 +5,7 @@
         "title": "Custom Vision Training Client"
     },
     "host": "southcentralus.api.cognitive.microsoft.com",
-    "basePath": "/customvision/v2.2/Training",
+    "basePath": "/customvision/v2.5/Training",
     "schemes": [
         "https"
     ],
