@@ -4,10 +4,10 @@
 
 This is the AutoRest configuration file for Batch.
 
-
-
 ---
+
 ## Getting Started
+
 To build the SDK for Batch, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -15,20 +15,29 @@ To build the SDK for Batch, simply [Install AutoRest](https://aka.ms/autorest/in
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
-
-
 ### Basic Information
+
 These are the global settings for the Batch API.
 
 ``` yaml
 openapi-type: data-plane
-tag: package-2018-12.8.0
+tag: package-preview-2019-01
 ```
 
+
+### Tag: package-preview-2019-01
+
+These settings apply only when `--tag=package-preview-2019-01` is specified on the command line.
+
+```yaml $(tag) == 'package-preview-2019-01'
+input-file:
+  - Microsoft.Batch/preview/2019-01-02/BatchService.json
+```
 ### Tag: package-2018-12.8.0
 
 These settings apply only when `--tag=package-2018-12.8.0` is specified on the command line.
@@ -77,6 +86,7 @@ input-file:
 ## Suppression
 
 Note that this setting should be removed once [this GitHub bug](https://github.com/Azure/azure-openapi-validator/issues/68) is fixed.
+
 ``` yaml
 directive:
   - suppress: R2063
@@ -85,6 +95,7 @@ directive:
 ```
 
 Note that this setting should be removed once [this GitHub bug](https://github.com/Azure/azure-openapi-validator/issues/69) is fixed.
+
 ``` yaml
 directive:
   - suppress: R2064
@@ -189,7 +200,6 @@ input-file:
 - Microsoft.Batch/stable/2017-05-01.5.0/BatchService.json
 ```
 
-
 ### Tag: package-2017-01.4.0
 
 These settings apply only when `--tag=package-2017-01.4.0` is specified on the command line.
@@ -226,10 +236,9 @@ input-file:
 - Microsoft.Batch/stable/2015-12-01.2.2/BatchService.json
 ```
 
-
 ---
-# Code Generation
 
+# Code Generation
 
 ## Swagger to SDK
 
@@ -275,11 +284,13 @@ python:
   package-name: azure-batch
   clear-output-folder: true
 ```
+
 ``` yaml $(python) && $(python-mode) == 'update'
 python:
   no-namespace-folders: true
   output-folder: $(python-sdks-folder)/azure-batch/azure/batch
 ```
+
 ``` yaml $(python) && $(python-mode) == 'create'
 python:
   basic-setup-py: true
