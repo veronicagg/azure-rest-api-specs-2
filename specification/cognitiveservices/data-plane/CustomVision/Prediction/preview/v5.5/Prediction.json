@@ -5,7 +5,7 @@
         "title": "Custom Vision Prediction Client"
     },
     "host": "southcentralus.api.cognitive.microsoft.com",
-    "basePath": "/customvision/v2.0/Prediction",
+    "basePath": "/customvision/v5.5/Prediction",
     "schemes": [
         "https"
     ],
