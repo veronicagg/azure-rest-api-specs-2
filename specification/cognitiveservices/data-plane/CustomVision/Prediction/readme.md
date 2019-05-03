@@ -114,3 +114,12 @@ java:
   with-optional-parameters: true
   with-single-async-method: true
 ```
+### Tag: package-preview-v4.4
+
+These settings apply only when `--tag=package-preview-v4.4` is specified on the command line.
+
+```yaml $(tag) == 'package-preview-v4.4'
+input-file:
+  - preview/v4.4/Prediction.json
+```
+
